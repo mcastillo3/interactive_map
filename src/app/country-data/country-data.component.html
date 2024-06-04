@@ -1,0 +1,17 @@
+<div id="fixed-div" class="card text-bg-info mb-3" style="max-width: 18rem;">
+    <div class="card-header">Country Data</div>
+    <div *ngIf="countryData" class="card-body">
+      <h5 class="card-title"></h5>
+      <div class="card-text">
+        <h2>{{ countryData.name }}</h2>
+        <ul>
+          <li>Capital: {{countryData.capitalCity}}</li>
+          <li>Region: {{countryData.region.value}}</li>
+          <li>Income Level: {{countryData.incomeLevel.value}}</li>
+          <li>Longitude: {{countryData.longitude}}</li>
+          <li>Latitude: {{countryData.latitude}}</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
